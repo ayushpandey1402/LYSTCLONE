@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        #container {
+
+            width: 20%;
+            height: 40px;
+            justify-content: flex-end;
+            display: flex;
+            border: 1px solid;
+            justify-content: space-between;
+            margin-left: 80%;
+            /* flex-direction: row-reverse;  */
+
+        }
+
+        #parent1 {
+            width: 100%;
+            border: 1px solid;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        #parent2 {
+            width: 90%;
+            justify-content: space-around;
+            display: flex;
+            border: 1px solid;
+            margin: auto;
+            color: black;
+
+        }
+
+        .parent2 {
+            padding: 20px;
+            width: 60%;
+        }
+
+        #search {
+            display: flex;
+            border: 1px solid;
+            margin-top: 2%;
+            justify-content: space-around;
+            margin-right: 80px;
+
+        }
+
+        #parent3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 400px);
+            border: 1px solid;
+            margin-top: 2%;
+        }
+
+        #parent3>div {
+            border: 1px solid;
+
+        }
+
+
+
+        .child1>img {
+            width: 80%;
+            margin: auto;
+            height: 310px;
+            margin-left: 80px;
+
+        }
+
+        #pic>div> {
+            height: 200px;
+            width: 80%;
+        }
+
+        img {
+            height: 400px;
+            width: 90%;
+            margin-right: 20px;
+        }
+
+        #parent4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 400px);
+            border: 1px solid;
+            margin-top: 3%;
+        }
+
+        #parent4>div {
+            border: 1px solid;
+        }
+
+        .child2>img {
+            width: 60;
+            margin: auto;
+            height: 300px;
+            margin-left: 45px;
+            margin-top: 30px;
+        }
+
+        #parent5 {
+            height: 400px;
+            width: 100%;
+            border: 1px solid;
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #parent5>div {
+            height: 390px;
+            width: 30%;
+            margin: auto;
+            border: 1px solid;
+        }
+
+        .child3 {
+            background-color: greenyellow;
+            margin-left: 30%;
+        }
+
+        #parent6 {
+            width: 100%;
+            height: px;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: auto;
+            border: 1px solid;
+            margin: auto;
+
+
+        }
+
+        .parent6b {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* .parent6b>div{
+    
+            justify-content: space-between;
+            justify-items: center;
+        } */
+        .parent6a {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        .parent6a>div {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent1">
+        <div id="container">
+            <div>
+                <h4>IN-Us$</h4>
+            </div>
+            <div>
+                <h4>Help</h4>
+            </div>
+            <div>
+                <h4><a href="sign.html">sign</a></h4>
+            </div>
+            <div>
+                <h4><a href="login.html">Join</a></h4>
+            </div>
+        </div>
+    </div>
+    <div id="parent2">
+        <!-- <div id="search"> -->
+        <div>
+            <h1 style="text-decoration: none;"><a href="index.html">LYST</a></h1>
+        </div>
+        <div>
+            <h4><a href="womens.html">WOMENS</a></h4>
+        </div>
+        <div>
+            <h4><a href="men.html">MEN</a></h4>
+        </div>
+        <div class="parent2">
+            <input type="search" placeholder="SEARCH">
+            <!-- </div> -->
+        </div>
+    </div>
+    <div id="pic">
+        <img src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg" alt="">
+    </div>
+    <div id="parent3">
+
+        <div class="child1">
+            <h1>BEST FOOT FORWARD</h1>
+            <img src="https://cdna.lystit.com/cms/BEST_FOOT_FORWARD_690fe1a91c.png" alt="">
+        </div>
+        <div class="child1">
+            <h1>LAID-BACK LUXURY</h1>
+            <img src="https://cdna.lystit.com/cms/laid_back_luxury_d44a8e3eba.jpeg" alt="">
+        </div>
+        <div class="child1">
+            <h1>REFINED GLAMOUR</h1>
+            <img src="https://cdna.lystit.com/cms/REFINED_GLAMOUR_c966d97813.jpeg" alt="">
+        </div>
+        <div class="child1">
+            <h2>ITALIST: SHOP DESIGNER BRANDS & SAVE UP TO 70%*</h2>
+            <img src="https://cdna.lystit.com/cms/JPG_SS_22_RTW_TOP_THE_ATTICO_PANTS_DOLCE_and_GABBANA_BAG_PRADA_WOMAN_1_8a2611b9e1.jpg"
+                alt="">
+        </div>
+        <div class="child1">
+            <h2>FASHION'S FRESH TAKE. SHOP NET-A-PORTER</h2>
+            <img src="https://cdna.lystit.com/cms/PS_22_Affiliate_No_Logo_600x600_5857f310f9.jpg" alt="">
+        </div>
+        <div class="child1">
+            <h2>MICHAEL KORS: YOUR FAVORITE STYLES ARE WAITING AND ON SALE.</h2>
+            <img src="https://cdna.lystit.com/cms/LINA_BAG_ASSET_600x600_01800ffbe1.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="parent4">
+        <div>
+            <h1>BREAKOUT BRANDS</h1>
+        </div>
+        <div class="child2">
+            <h2>PATOU</h2>
+            <img src="https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg" alt="">
+        </div>
+        <div class="child2">
+            <h2>GUCCI</h2>
+            <img src="https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg" alt="">
+        </div>
+        <div class="child2">
+            <h2>BALENCIAGA EARRINGS</h2>
+            <img src="https://cdna.lystit.com/cms/balenciaga_earrings_28c5ac2ab9.jpeg" alt="">
+        </div>
+        <div class="child2">
+            <h2>SIMONE ROCHA EARRINGS</h2>
+            <img src="https://cdna.lystit.com/cms/simone_rocha_earrings_d997cb6315.jpeg" alt="">
+        </div>
+        <div>
+            <h1>TRENDING NOW</h1>
+        </div>
+        <div class="child2">
+            <h2>MEN'S BALENCIAGA T-SHIRTS</h2>
+            <img src="https://cdna.lystit.com/cms/designer_category_mens_balenciaga_t_shirts_2c33757129.jpeg" alt="">
+        </div>
+        <div>
+            <h1>HOT RIGHT NOW</h1>
+        </div>
+        <div class="child2">
+            <h2>MEN'S CANALI COATS</h2>
+            <img src="https://cdna.lystit.com/cms/designer_category_mens_canali_coats_fcd56d8791.jpeg" alt="">
+        </div>
+    </div>
+    <div id="parent5">
+
+        <div>
+            <h1>1</h1>
+            <h2>THE BIGGEST SELECTION</h2>
+            <p>Shop over 12,000 brands and stores in one place.</p>
+            <p>Find exactly what you want with powerful search and personal recommendations.</p>
+        </div>
+        <div>
+            <h1>2</h1>
+            <h2>THE HOTTEST PRODUCTS</h2>
+            <p>See what’s new and what’s trending.</p>
+            <p>Hit the heart to receive alerts on the latest drops from your favourite brands.</p>
+        </div>
+        <div>
+            <h1>3</h1>
+            <h2>THE BEST PRICES</h2>
+            <p>Compare prices and shipping options across thousands of stores.</p>
+            <p>Lyst members are notified when an item goes on sale.</p>
+        </div>
+        <div class="child3">
+            <diV>
+                <h1>SIGN UP FOR SMARTER SHOPPING</h1>
+                <button><a href="sign.html">Join</a></button>
+
+            </diV>
+        </div>
+    </div>
+
+    <div id="parent6">
+        <div class="parent6a">
+            <div>
+                <a href="https://www.facebook.com/Lyst"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lyst/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="parent6b">
+            <div>
+                <h3>INTERNATIONAL</h3>
+                <h5></h5>
+                <p>Lyst - AU</p>
+                <p>Lyst - CA</p>
+                <p>Lyst - UK</p>
+                <p>Lyst - US</p>
+                <p>Lyst - US</p>
+                <p>Lyst - Schweiz</p>
+                <p>Lyst - Deutschland</p>
+                <p>Lyst - España</p>
+                <p>Lyst - France</p>
+                <p>Lyst - Italia</p>
+                <p>Lyst - 日本</p>
+                <p>Lyst - België</p>
+                <p>Lyst - Nederland</p>
+
+            </div>
+            <div>
+                <h3>HELP AND INFO</h3>
+                <p>Help center</p>
+                <p>About us</p>
+                <p>Shipping policy</p>
+                <p>Returns policy</p>
+                <p>Payments</p>
+                <p>Refund policy</p>
+                <p>Developers</p>
+                <p>Careers</p>
+                <p>Contact</p>
+                <p>Terms & conditions</p>
+                <p>Privacy & cookie policy</p>
+                <p>Intellectual property</p>
+                <p>Categories</p>
+                <p>Become a partner</p>
+                <p>Lyst Insights</p>
+                <p>Lyst News</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

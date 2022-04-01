@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        .container {
+            height: 430px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+
+        }
+
+        .child1 {
+            height: 420px;
+            width: 30%;
+            margin: auto;
+            margin-right: 5%;
+            background-color: white;
+            text-align: center;
+
+        }
+
+        .child2 {
+            height: 420px;
+            width: 30%;
+            margin: auto;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #email {
+            height: 30px;
+            width: 55%;
+            margin-top: -10%;
+        }
+
+        #psw {
+            height: 30px;
+            width: 55%;
+            margin-top: -10%;
+        }
+
+        .registerbtn {
+            height: 30px;
+            width: 60%;
+            margin-bottom: auto;
+            margin-top: 5px;
+            background-color: black;
+            color: white;
+        }
+
+        .child4 {
+
+
+            margin-left: 40px;
+            margin-bottom: -5%;
+            margin-top: 25%;
+
+        }
+
+        /* h2{
+                text-align: center; */
+        /* } */
+
+        .child4a {
+            margin-top: 10%;
+            margin-left: 40px;
+            margin-bottom: -5%;
+
+        }
+
+        .child4b {
+            margin-left: 40px;
+        }
+
+        /* p{
+                text-align: center;
+            } */
+    </style>
+</head>
+
+<body>
+    <diV class="container">
+
+        <div class="child1">
+            <h2>Search thousands of
+                <br />
+                fashion brands and stores
+                <br /> all in one place
+            </h2>
+            <p>We just need a few details from you first.</p>
+            <form>
+                <p>Email address</p>
+                <input id="email" type="email" placeholder="Enter Email">
+                <p>Password</p>
+                <input id="psw" type="password" placeholder="Enter Password">
+                <br>
+                <input type="checkbox" id="remember">
+                <label for="remember">I would like to hear about products, services, and sales, including personalized
+                    email alerts from
+                    Lyst. You can unsubscribe at any time.</label>
+                    <input type="submit" >
+                <!-- //<a href="index.html"> Welcome To LYST</a> -->
+                
+
+            </form>
+        </div>
+        <div class="child2">
+            <p> Save your searches</p>
+            <p>Create a wishlist</p>
+            <p>Get alerts on your items</p>
+
+        </div>
+
+    </div>
+
+    </diV>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", signup)
+    var newuserdata = JSON.parse(localStorage.getItem("userCreds")) || []
+
+    function signup() {
+        // console.log("my function")
+        event.preventDefault();
+
+        var newuserobj = {
+            email: document.querySelector("#email").value,
+            password: document.querySelector("#psw").value,
+        };
+        newuserdata.push(newuserobj)
+        //console.log(newuserdata)
+        window.location.href="index.html";
+
+        localStorage.setItem("userCred", JSON.stringify(newuserdata))
+    }
+</script>
